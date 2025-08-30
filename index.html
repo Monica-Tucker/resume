@@ -4,27 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monica Tucker Resume</title>
+    <link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
     <style>
-        .role {
-            font-style: italic;
+        nav {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        body {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            gap: 20px;
+        }
+        main {
+            flex-grow: 1;
+        }
+        div:hover, h1:hover {
+            background-color: aliceblue;
+            transition: all 0.3s ease;
+            transform: scale(1.05);
+            box-shadow: 10px 10px 2px 1px rgb(0 0 255 / 0.2);
+        }
+        h1:hover {
+            font-family:'Rock Salt';
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Monica Tucker</h1>
-        <p>monica.stav@outlook.com | (501) 504-9780</p>
+        <nav>
+            <a href="mailto:monica.stav@outlook.com">Email</a>
+            <a href="tel:+5015049780">Phone</a>
+            <a href="https://www.linkedin.com/in/monica-tucker-05437968/">LinkedIn</a>
+            <a href="https://monicatucker.myportfolio.com/">Portfolio</a>
+            <a href="https://github.com/Monica-Tucker">GitHub</a>
+        </nav>
+        <div>
+        <h2 class="skills">Skills</h2>
+        <ul>
+        <li>Written Communication
+        <li>Time Management & Efficiency
+        <li>Creative Writing
+        <li>HTML
+        <li>CSS
+        </ul>
+        </div>
+        <h2>Education</h2>
+        <div>
+        <p><b>Arkansas Coding Academy</b></p>
+        <ul>
+        <li>Certificate of Completion, Introduction to HTML & CSS (2025)
+        </ul>
+        </div>
+        <div>
+        <p><b>University of Central Arkansas</b></p>
+        <ul>
+        <li>Bachelor of Arts, Creative Writing (2013)
+        <li>Minor: Interdisciplinary Studies
+        <li>Member of the Norbert O. Schedler Honors College
+        </ul>
+        </div>
+
     </header>
+
     <main>
         <section>
-            <h2>Objective</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laborum aliquid illo accusantium libero! Atque a obcaecati debitis laudantium recusandae pariatur labore nisi accusamus. Deserunt modi numquam harum sed sint.</p>
-
+            <div>
+            <h2>Executive Summary</h2>
+            <p>Experienced writer and communicator with expertise in advertising and eCommerce.
+                Skilled in producing clear, impactful content and managing complex projects with efficiency.
+                Combines creative writing strengths, a critical eye, and technical proficiency in HTML and CSS to deliver user-focused solutions.</p>
+            </div>
+            
             <h2>Work History</h2>
-
-            <h3 class="role">OneApp Grant Manager</h3>
-            <h4>Arkansas Public School Resource Center, Sep. 2025 - June 2026</h4>
+            <div>
+            <h3>OneApp Grant Manager</h3>
+            <p><em>Arkansas Public School Resource Center, Sep. 2025 - June 2026</em></p>
             <ul>
                 <li>Reviewed all existing OneApp/Enroll Arkansas sites, documents, processes, and meeting notes
                 <li>Researched and gathered notes on all Arkansas open enrollment charter school processes
@@ -32,8 +88,10 @@
                 <li>Researched and reviewed Arkansas school enrollment requirements, commonly used terms, and state data reporting
                 <li>Updated Enroll Arkansas website to reflect current schools
             </ul>
-            <h3 class="role">Chief Copywriter</h3>
-            <h4>Kirkpatrick Creative, Dec. 2017 - Nov. 2024</h4>
+            </div>
+            <div>
+            <h3>Chief Copywriter</h3>
+            <p><em>Kirkpatrick Creative, Dec. 2017 - Nov. 2024</em></p>
             <ul>
                 <li>Worked alongside media directors, art directors, account executives, and clients to create comprehensive marketing campaigns
                 <li>Prodced and edited advertising copy for 30+ clients
@@ -41,8 +99,10 @@
                 <li>Conceptualized, wrote, and edited client-facing correspondence, such as strategy proposals and email campaigns
                 <li>Proofread ads for digital and print publication
             </ul>
-            <h3 class="role">Senior eCommerce Writer</h3>
-            <h4>Dillard's, Dec. 2014 - Dec. 2017</h4>
+            </div>
+            <div>
+            <h3>Senior eCommerce Writer</h3>
+            <p><em>Dillard's, Dec. 2014 - Dec. 2017</em></p>
             <ul>
                 <li>Collaborated with department designers to create attention-grabbing splash pages, landing pages, and website banners
                 <li>Spearheaded the redesign of category organization to create a streamlined, more intuitive customer experience
@@ -50,17 +110,7 @@
                 <li>Acted as a consultant to UI and UX teams in the development of new proprietary applications to be used by the e-commerce production team
                 <li>Trained new Digital Production Associates in the use of Dillard's proprietary e-commerce applications
             </ul>
-            <h2>Education</h2>
-            <ul>
-                <li>Certificate of Completion for Introduction to HTML & CSS at Arkansas Coding Academy (2025)
-                <li>Bachelor of Arts in Creative Writing at University of Central Arkansas (2013)
-            </ul>
-            <h2>Skills</h2>
-            <ul>
-                <li>Written Communication
-                <li>Time Management & Efficiency
-                <li>Creative Writing
-            </ul>
+            </div>
         </section>
     </main>
 </body>
