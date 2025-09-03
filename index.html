@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monica Tucker Resume</title>
-    <link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
     <style>
         nav {
             display: flex;
@@ -13,51 +12,76 @@
         }
         body {
             display: grid;
-            grid-template-columns: 30% 70%;
+            grid-template-columns: 25% 75%;
             gap: 20px;
+            padding: 30px;
+            margin: auto;
         }
-        main {
-            flex-grow: 1;
-        }
-        div:hover, h1:hover {
+        div:hover {
             background-color: aliceblue;
-            transition: all 0.3s ease;
-            transform: scale(1.05);
+            transition: all 0.5s ease;
+            transform: scale(1.1);
             box-shadow: 10px 10px 2px 1px rgb(0 0 255 / 0.2);
         }
-        h1:hover {
-            font-family:'Rock Salt';
+        .sidebar {
+            margin-right: auto;
         }
+        section {
+            max-width: 780px;
+        }
+        @media print {
+            h3, p {
+                margin: 0;
+                padding: 0;
+            }
+            nav, .sidebar {
+                width: 100%;
+                text-align: left;
+                ul {
+                    list-style-type: none;
+                    padding-left: 0;
+                    margin-left: 0;
+                }
+            }
+            section {
+                width: 100%;
+            }
+            a[href]:after {
+                content: " (" attr(href) ")"; /* Display URL in parentheses after the link text */
+                font-size: 70%; /* Adjust font size if desired */
+            }
+    }
     </style>
 </head>
 <body>
     <header>
         <h1>Monica Tucker</h1>
         <nav>
-            <a href="mailto:monica.stav@outlook.com">Email</a>
-            <a href="tel:+5015049780">Phone</a>
-            <a href="https://www.linkedin.com/in/monica-tucker-05437968/">LinkedIn</a>
-            <a href="https://monicatucker.myportfolio.com/">Portfolio</a>
-            <a href="https://github.com/Monica-Tucker">GitHub</a>
+            <a href="mailto:monica.stav@outlook.com"><em>Email</em></a>
+            <a href="tel:+5015049780"><em>Phone</em></a>
+            <a href="https://www.linkedin.com/in/monica-tucker-05437968/" target="_blank"><em>LinkedIn</em></a>
+            <a href="https://monicatucker.myportfolio.com/" target="_blank"><em>Portfolio</em></a>
+            <a href="https://github.com/Monica-Tucker" target="_blank"><em>GitHub</em></a>
         </nav>
-        <div>
+        <div class="sidebar">
         <h2 class="skills">Skills</h2>
         <ul>
         <li>Written Communication
-        <li>Time Management & Efficiency
+        <li>Time Management
         <li>Creative Writing
         <li>HTML
         <li>CSS
+        <li>Research
         </ul>
         </div>
         <h2>Education</h2>
-        <div>
+        <div class="sidebar">
         <p><b>Arkansas Coding Academy</b></p>
         <ul>
         <li>Certificate of Completion, Introduction to HTML & CSS (2025)
         </ul>
         </div>
-        <div>
+        <div class="sidebar">
         <p><b>University of Central Arkansas</b></p>
         <ul>
         <li>Bachelor of Arts, Creative Writing (2013)
