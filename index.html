@@ -17,6 +17,21 @@
             padding: 30px;
             margin: auto;
         }
+        main .sidebar {
+                display: none;
+            }
+        @media (max-width: 600px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            main .sidebar {
+                display: block;
+            }
+            header .sidebar {
+                display: none;
+            }
+        }
         div:hover {
             background-color: aliceblue;
             transition: all 0.5s ease;
@@ -74,8 +89,8 @@
         <li>Research
         </ul>
         </div>
-        <h2>Education</h2>
         <div class="sidebar">
+        <h2>Education</h2>
         <p><b>Arkansas Coding Academy</b></p>
         <ul>
         <li>Certificate of Completion, Introduction to HTML & CSS (2025)
@@ -136,6 +151,32 @@
             </ul>
             </div>
         </section>
+         <div class="sidebar">
+        <h2 class="skills">Skills</h2>
+        <ul>
+        <li>Written Communication
+        <li>Time Management
+        <li>Creative Writing
+        <li>HTML
+        <li>CSS
+        <li>Research
+        </ul>
+        </div>
+        <div class="sidebar">
+        <h2>Education</h2>
+        <p><b>Arkansas Coding Academy</b></p>
+        <ul>
+        <li>Certificate of Completion, Introduction to HTML & CSS (2025)
+        </ul>
+        </div>
+        <div class="sidebar">
+        <p><b>University of Central Arkansas</b></p>
+        <ul>
+        <li>Bachelor of Arts, Creative Writing (2013)
+        <li>Minor: Interdisciplinary Studies
+        <li>Member of the Norbert O. Schedler Honors College
+        </ul>
+        </div>
     </main>
 </body>
 </html>
